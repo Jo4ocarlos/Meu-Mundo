@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Mundo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ligthMode.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <link rel="shortcut icon" href="imagens/meu-mundo.png">
+    <script src="script/script.js" defer></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+
+        <nav class="cabecalho_nav">
+
+            <div class="menu_area">
+                <input type="checkbox" name="menu" id="menu">
+                <label for="menu" id="menuLabel">
+                    <span class="material-symbols-outlined" id="menuIcon">menu</span>
+                </label>
+            </div>
+
+            <menu>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </menu>
+
+        </nav>
+
+        <div class="light_mode_icon">
+            <input type="checkbox" name="mudar-tema" id="mudar-tema">
+            <label for="mudar-tema">
+                <span class="material-symbols-outlined sun">
+                    light_mode
+                </span>
+                <span class="material-symbols-outlined moon">
+                    mode_night
+                </span>
+            </label>
+        </div>
+
+    </header>
+    <main >
+        <section class="apresentacao" id="home">
+            <div class="apresentacao_conteudo">
+                <h1 class="apresentacao_titulo">
+                    &lt;<span class="animacao_texto"> Olá, Mundo!</span>
+                </h1>
+                <p class="apresentacao_texto">
+                    Eu sou João Carlos, desenvolvedor <span class="animacao_texto_dev"> Front-end</span>
+                </p>
+                <div class="apresentacao_links">
+                    <a class="apresentacao_button" href="https://www.linkedin.com/in/jo%C3%A3o-carlos-de-almeida-silva-724579171/" target="_blank">LinkedIn</a>
+                    <a class="apresentacao_button" href="https://github.com/Jo4ocarlos" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre-mim" id="sobre">
+            
+            <div class="sobre-mim_conteudo">
+                <h2 class="sobre-mim_titulo">Sobre mim</h2>
+                <p class="sobre-mim_texto">
+                    Olá! Sou João Carlos, um estudante de Gestão da Tecnologia da Informação com uma paixão pela área de desenvolvimento, sou conhecido por minha dedicação e esforço em busca de aprendizado constante.<br>Atualmente estou estagiando como suporte de TI na clínica Otorhinus.<br>
+                    Além disso, estou me aprofundando em cursos que complementam minha formação, como React e banco de dados, estou ansioso para aplicar os conhecimentos adquiridos nesses cursos em projetos futuros.
+                </p>
+            </div>
+            <img src="imagens/minha_foto.png" alt="Minha Foto">
+        </section>
+
+        
+
+        <section class="habilidades" id="habilidades">
+            <h2 class="habilidades_titulo">Habilidades</h2>
+            
+            <div class="habilidades_conteudo">
+                
+                    <div class="habilidade_card">
+                        <img src="imagens/logo-js.jpg" alt="logo JavaScript">
+                        <h3 class="habilidade_nome">JavaScript</h3>
+                        <div class="habilidade_barra">
+                            <div class="habilidade_progresso" style="width: 30%;"></div>
+                        </div>
+                        <p class="habilidade_porcentagem">30%</p>
+                    </div>
+
+                    <div class="habilidade_card">
+                        <img src="imagens/logo-html.png" alt="logo html">
+                        <h3 class="habilidade_nome">HTML</h3>
+                        <div class="habilidade_barra">
+                            <div class="habilidade_progresso" style="width: 60%;"></div>
+                        </div>
+                        <p class="habilidade_porcentagem">60%</p>
+                    </div>
+
+                    <div class="habilidade_card">
+                        <img src="imagens/logo-css.png" alt="logo css">
+                        <h3 class="habilidade_nome">CSS</h3>
+                        <div class="habilidade_barra">
+                            <div class="habilidade_progresso" style="width: 30%;"></div>
+                        </div>
+                        <p class="habilidade_porcentagem">30%</p>
+                    </div>
+
+                    <div class="habilidade_card">
+                        <img src="imagens/logo-react.jpg" alt="Logo React">
+                        <h3 class="habilidade_nome">React</h3>
+                        <div class="habilidade_barra">
+                            <div class="habilidade_progresso" style="width: 15%;"></div>
+                        </div>
+                        <p class="habilidade_porcentagem">15%</p>
+                    </div> 
+
+                    <div class="habilidade_card">
+                        <img src="imagens/mysql-logo.png" alt="logo sql">
+                        <h3 class="habilidade_nome">MySQL</h3>
+                        <div class="habilidade_barra">
+                            <div class="habilidade_progresso" style="width: 10%;"></div>
+                        </div>
+                        <p class="habilidade_porcentagem">10%</p>
+                    </div>     
+            </div>
+            <p class="comentarios">/*Nível de conhecimento*/</p>
+        </section>
+
+
+        <section class="projetos_section" id="projetos">
+            <h2 class="projetos_section_titulo">Meus Projetos</h2>
+            <div class="projetos">
+                <div class="projeto">
+                    <a href="https://tabela-fipe-eta.vercel.app/" target="_blank">
+                        <img src="imagens/projeto_tabela_fipe.png" alt="imagem projeto Tabela Fipe">
+                        <h3 class="projeto_sub-titulo">Tabela Fipe</h3>
+                    </a>
+                </div>
+                <div class="projeto">
+                    <a href="https://jo4ocarlos.github.io/desafios-javascript/tela-login-museu/formulario/form.html" target="_blank">
+                        <img src="imagens/projeto_form.png" alt="imagem do projeto formulário">
+                        <h3 class="projeto_titulo">Formulário C/ API</h3>
+                    </a>
+                </div>
+                <div class="projeto">
+                    <a href="#" target="_blank">
+                        <img src="" alt="">
+                        <h3 class="projeto_titulo">/*EM BREVE*/</h3>
+                    </a>
+                </div>
+            </div>
+            <p class="comentarios">/*clique para abrir o projeto*/</p>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape_sociais">
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-carlos-de-almeida-silva-724579171/" target="_blank"><img src="imagens/icon-linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Jo4ocarlos" target="_blank"><img src="imagens/icon-github.png" alt="GitHub"></a>
+        </div>
+        <p class="rodape_direitos">&copy; 2023 - João Carlos. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

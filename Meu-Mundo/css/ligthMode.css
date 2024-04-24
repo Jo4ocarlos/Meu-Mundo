@@ -1,0 +1,92 @@
+/*Ligth Mode area*/
+:root{
+    --light-Cor0:#FFF;
+    --light-Cor1:#F7F2FF;
+    --light-Cor2:#E2D5FB;
+    --light-Cor3:#c3b8d9b4;
+    --light-Cor4:#7030Ed;
+    --light-Cor5:#000000;
+}
+/*seção cabeçalho*/
+.light{
+    color: var(--light-Cor4);
+    transition: background-image 2.3s, color 1.5s ;
+}
+.light .cabecalho_nav ul{
+    background-color: var(--light-Cor1);
+}
+.light .headerBackground{
+    background-color: var(--light-Cor1);
+  }
+.light .cabecalho_nav ul a {
+    color: var(--light-Cor5);
+}
+.light .cabecalho_nav ul a:hover {
+    background-color:var(--light-Cor4);
+    color: var(--light-Cor0);
+}
+/*seção apresentação*/
+.light .apresentacao{
+    background-image: url('../imagens/binarios-branco.png');
+}
+.light .apresentacao_button {
+    background-color:var(--light-Cor4);
+    color: var(--light-Cor0);
+}
+.light .apresentacao_button:hover {
+    background-color:var(--light-Cor3);
+    color: var(--light-Cor5);
+}
+/*seção sobre mim */
+.light .sobre-mim{
+    background-color: var(--light-Cor2);
+    color: #000000; 
+}
+
+/*seção habilidades*/
+.light .habilidades {
+    background-color: var(--light-Cor1);
+    color: var(--light-Cor5);
+}
+.light .habilidade_card {
+    background-color:var(--light-Cor2);
+}
+.light .habilidade_barra {
+    background-color: var(--light-Cor1);
+}
+/*seção projetos*/
+.light .projetos_section {
+    background-color:  var(--light-Cor2); 
+    color: var(--light-Cor5);
+}
+.light .projeto {
+    background-color: var(--light-Cor1);
+}
+.light .projeto a {
+    color: var(--light-Cor5);
+}
+
+/*seção rodapé*/
+
+.light .rodape {
+    background-color: var(--light-Cor0);
+}
+.light .rodape_sociais img:hover {
+    border: 2px solid var(--light-Cor4);   
+}  
+/*icones*/
+.light .material-symbols-outlined{
+    color: var(--light-Cor5);   
+}
+.moon{
+    display: none;
+}
+.light .moon{
+    display: block;
+}
+.sun{
+    display: block;
+}
+.light .sun{
+    display: none;
+}
