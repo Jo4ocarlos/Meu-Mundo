@@ -206,21 +206,6 @@ input[type ="checkbox"]{
     font-size: 20px;
     margin-top: 10px;
 }
-.habilidade_barra {
-    background-color: var(--cor1);
-    height: 8px;
-    border-radius: 4px;
-    margin: 10px 0;
-}
-.habilidade_progresso {
-    background-color: var(--cor4);
-    height: 100%;
-    border-radius: 4px;
-}
-.habilidade_porcentagem {
-    font-size: 18px;
-    
-}
 .comentarios{
     font-size: 1.5em;
     margin-top: 50px;

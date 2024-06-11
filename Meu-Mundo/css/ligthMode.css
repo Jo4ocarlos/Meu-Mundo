@@ -51,9 +51,6 @@
 .light .habilidade_card {
     background-color:var(--light-Cor2);
 }
-.light .habilidade_barra {
-    background-color: var(--light-Cor1);
-}
 /*seção projetos*/
 .light .projetos_section {
     background-color:  var(--light-Cor2); 
