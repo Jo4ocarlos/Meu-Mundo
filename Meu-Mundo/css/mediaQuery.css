@@ -1,4 +1,4 @@
-@media screen and (min-width:950px) {
+@media screen and (min-width:780px) {
     .cabecalho{
         background: none;
     }
@@ -78,299 +78,33 @@
     /*estilos da seção de Habilidades*/
     .habilidades_titulo,
     .projetos_section_titulo {
-        font-size: 3.0em;
+        font-size: 2.0em;
 
     }
     .comentarios{
         width: 100%;
     }
+
+    .projetos_section {
+        padding: 30px;
+    }
+    
+     
+      .projeto {
+          width: 250px;
+          height: 220px;
+    
+      }
+    
+      .carousel {
+          height: 700px;
+          perspective: 1200px;
+      }
+    
+      .scroll-btn {
+          font-size: 3.5rem;
+          padding: 10px;
+      }
     
 
 }
-
-
-/*
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #000000;
-    color: #F6F6F6;
-}
-
-
-
-.cabecalho {
-    position: fixed;
-    width: 100%;
-    z-index: 1; 
-    transition: background-color 0.3s, padding 0.3s;
-    padding: 30px ; 
-    display: flex;
-    align-items: center;
-}
-
-.cabecalho ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-}
-
-.cabecalho li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #FFF;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.cabecalho li a:hover {
-    background-color: #FFF;
-    color: #3B0F95;
-}
-
-.apresentacao {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    background-image: url('imagens/binarios.png');
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-
-.apresentacao_conteudo {
-    display: flex;
-    flex-direction: column;
-    margin-left: 200px;
-   
-}
-
-.apresentacao_conteudo_titulo {
-    font-size: 56px;
-    font-family: var(--font_titulo);
-    color: white;
-}
-
-.apresentacao_conteudo_texto {
-    font-size: 34px;
-    font-family: var(--font_padrao);
-}
-
-.titulo-destaque {
-    color: #22D4FD;
-}
-
-.apresentacao_links {
-    display: flex;
-   margin-top: 20px;
-    gap: 40px;
-}
-
-.apresentacao_button {
-    background-color: white;
-    color: #000000;
-    width: 280px;
-    padding: 20px;
-    border-radius: 16px;
-    font-size: 24px;
-    font-weight: bolder;
-    text-align: center;
-    text-decoration: none;
-    font-family: var(--font_padrao);
-}
-
-.apresentacao_button:hover {
-    background-color: black;
-   
-    color: #FFF;
-    text-decoration: underline;
-}
-
-
-.sobre-mim {
-    display: flex;
-    align-items: center; 
-    text-align: center; 
-   justify-content: center;
-    padding:250px 0px;
-    
-}
-
-.sobre-mim_conteudo {
-    max-width: 600px;
-
-}
-
-.sobre-mim_titulo {
-    font-size: 4em;
-    margin-bottom: 20px;
-}
-
-.sobre-mim_texto {
-    font-size: 28px;
-   
-}
-
-.sobre-mim img {
-    max-width: 20%;
-}
-
-
-.habilidades {
-    text-align: center;
-    padding: 80px 0;
-    background-color: #555454;
-}
-
-.habilidades_titulo {
-    font-size: 32px;
-    margin-bottom: 40px;
-}
-
-.habilidades_cards {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.habilidade_card {
-    background-color: #333;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    width: 200px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.habilidade_card img {
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-}
-
-.habilidade_nome {
-    font-size: 20px;
-    margin-top: 10px;
-    color: white;
-}
-
-.habilidade_barra {
-    background-color: #555;
-    height: 8px;
-    border-radius: 4px;
-    margin: 10px 0;
-}
-
-.habilidade_progresso {
-    background-color: #3B0F95;
-    height: 100%;
-    border-radius: 4px;
-}
-
-.habilidade_porcentagem {
-    font-size: 18px;
-    color: white;
-}
-
-
-
-.projetos_section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    padding: 80px;
-    background-color: #1E1E1E;
-    color: #FFFFFF;
-    text-align: center;  
-}
-
-.projetos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-}
-
-
-.projetos_titulo {
-    font-size: 32px;
-    margin-bottom: 40px;
-
-}
-
-.projeto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #555454;
-    border-radius: 8px 50px;
-    padding: 10px;
-    text-align: center;
-    height: 300px;
-    width: 20%;
-}
-
-.projeto a {
-    display: block;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.projeto img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 70px;
-}
-
-
-
-.projeto_descricao {
-    font-size: 18px;
-}
-
-
-.rodape {
-    background-color: #555454;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.rodape_sociais {
-    margin-bottom: 20px;
-}
-
-.rodape_sociais a {
-    display: inline-block;
-    margin: 0 10px;
-    text-decoration: none;
-    color: white;
-    
-}
-
-.rodape_sociais img{
-    width: 50px;
-    border-radius: 100%;
-    
-    
-}
-.rodape_sociais img:hover {
-    background-color: #3B0F95;
-}
-
-.rodape_direitos {
-    font-size: 14px;
-}
-
-
-*

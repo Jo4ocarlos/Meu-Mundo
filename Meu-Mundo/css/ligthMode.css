@@ -9,7 +9,7 @@
 }
 /*seção cabeçalho*/
 .light{
-    color: var(--light-Cor4);
+    color: var(--light-Cor5);
     transition: background-image 2.3s, color 1.5s ;
 }
 .light .cabecalho_nav ul{
@@ -45,7 +45,7 @@
 
 /*seção habilidades*/
 .light .habilidades {
-    background-color: var(--light-Cor1);
+    background-image: url('../imagens/binarios-hablidade-branco.png');
     color: var(--light-Cor5);
 }
 .light .habilidade_card {
@@ -58,7 +58,17 @@
 }
 .light .projeto {
     background-color: var(--light-Cor1);
+    color: var(--light-Cor5);
 }
+.light .scroll-btn {
+    background-color: var(--light-Cor2);
+    color: var(--light-Cor5);
+  
+}
+.light .projeto h3 {
+    color: var(--light-Cor5);
+}
+
 .light .projeto a {
     color: var(--light-Cor5);
 }
