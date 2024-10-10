@@ -1,57 +1,50 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 
-:root {
-    --cor0: #FFF;
-    --cor1: #050404;
-    --cor2: #1E1E1E;
-    --cor3: #000;
-    --cor4: #3B0F95;
+:root{
+    --cor0:#FFF;
+    --cor1:#555454;
+    --cor2:#1E1E1E;
+    --cor3:#000;
+    --cor4:#3B0F95;
 
     --font-padrao: 'Roboto', sans-serif;
-
+     
     --font-titulo-secao: 'Nerko One', 'cursive';
-
-
+    
+    
 }
-
 /*Estilos gerais*/
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    transition: background-color 2.3s;
-    text-decoration: none;
 }
-
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth; /* Mantenha "smooth" */
+    
 }
-
 body {
     background-color: var(--cor3);
     font-family: var(--font-padrao);
     color: var(--cor0);
-    transition: color 1.5s;
-    overflow-x: hidden;
-
+    transition:  color 1.5s ;
+   
 }
-
 /* Estilo do Cabeçalho */
 .cabecalho {
     position: fixed;
-    display: flex;
+     display: flex;
     align-items: center;
     justify-content: space-between;
     font-weight: bolder;
-    z-index: 3;
     width: 100%;
     height: 10vh;
 
-}
-
-.cabecalho_nav ul {
+  }
+  .cabecalho_nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,79 +57,69 @@ body {
     height: 92vh;
     font-size: 1.2em;
     background: var(--cor3);
-    z-index: 3;
+    z-index: 1;
     transform: translateX(110%);
     transition: transform 0.5s ease-in-out, background-color 1.2s;
     gap: 0px;
-}
-
-.headerBackground {
+  }
+  .headerBackground{
     background-color: #000;
-    transition: ease-in-out, background-color 1.2s;
-}
-
-.cabecalho_nav ul.active {
+    transition:  ease-in-out, background-color 1.2s;
+  }
+  .cabecalho_nav ul.active {
     transform: translateX(0);
-}
-
-.cabecalho_nav ul a {
+  }
+  .cabecalho_nav ul a {
     color: var(--cor0);
-    
+    text-decoration: none;
     border-radius: 10px;
     padding: 40px;
     text-align: center;
-    transition: border-color 4.2s;
-}
+    transition: background-color 1.2s;
+  }
 
-.cabecalho_nav ul a:hover {
-    background-color:var(--cor0);
-    color: var(--cor4);
-}
-
-input[type="checkbox"] {
+  .cabecalho_nav ul a:hover {
+    background-color: var(--cor0);
+    color: var(--cor3);
+  }
+input[type ="checkbox"]{
     display: none;
 }
-
-.material-symbols-outlined {
+.material-symbols-outlined{
     color: var(--cor0);
     font-size: 2.3em;
     font-weight: bolder;
     cursor: pointer;
     padding: 20px;
-
+ 
 }
-
 /*Estilos da seção inical/apresentação*/
 .apresentacao {
     display: flex;
     align-items: center;
     height: 100vh;
-    background-image: url('../imagens/binarios-projeto-preto.png');
+    background-image: url('../imagens/binarios.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     transition: background-image 2.3s;
 }
-
 .apresentacao_conteudo {
     display: flex;
     flex-direction: column;
     padding: 10px;
     width: 100%;
 }
-
 .apresentacao_titulo {
-    font-size: 2em;
+    font-size: 2em;  
 }
-
 .apresentacao_links {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     gap: 30px;
 }
-
 .apresentacao_button {
     background-color: var(--cor0);
     color: var(--cor3);
@@ -146,52 +129,44 @@ input[type="checkbox"] {
     font-size: 1.5em;
     font-weight: bolder;
     text-align: center;
-    
+    text-decoration: none;
     transition: background-color 1.3s, color 0.5s;
 }
-
 .apresentacao_button:hover {
     background-color: var(--cor3);
     color: var(--cor0);
     text-decoration: underline;
 }
-
 /* Estilos da seção sobre mim */
 .sobre-mim {
     display: flex;
-    align-items: center;
+    align-items: center; 
     text-align: center;
     justify-content: center;
     flex-direction: column;
     padding: 10px;
-    background-color: var(--cor1);
+    background-color: var(--cor3);
     color: var(--cor0);
-    
+    transition: background-color 2.3s;
 }
-
 .sobre-mim_conteudo {
     max-width: 400px;
 
 }
-
 .sobre-mim_titulo {
     font-size: 3em;
     margin-bottom: 20px;
-    
 }
-
 .sobre-mim_texto {
     text-align: left;
     line-height: 40px;
     font-size: 1.5em;
     margin-bottom: 20px;
-
+   
 }
-
 .sobre-mim img {
-    display: none;
+   display:none;
 }
-
 /*estilos da seção de Habilidades*/
 .habilidades {
     display: flex;
@@ -200,180 +175,122 @@ input[type="checkbox"] {
     text-align: center;
     font-weight: bolder;
     padding: 80px 0;
-    background-image: url('../imagens/binarios-habilidades.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: var(--cor1);
     color: var(--cor0);
-    
+    transition: background-color 2.3s;
 }
-
 .habilidades_titulo {
     font-size: 2.2em;
     margin-bottom: 40px;
 }
-
 .habilidades_conteudo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
 }
-
 .habilidade_card {
     background-color: var(--cor2);
     box-shadow: 4px 4px 5px var(--cor3);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    width: 200px;
+    width: 200px;  
 }
-
 .habilidade_card img {
     width: 70px;
     height: 70px;
     border-radius: 100%;
 }
-
 .habilidade_nome {
     font-size: 20px;
     margin-top: 10px;
 }
-
-.comentarios {
+.comentarios{
     font-size: 1.5em;
     margin-top: 50px;
     font-weight: normal;
-    width: 100%;
+    width: 100vw;
 }
-
 /*estilos da seção de projetos*/
-
 .projetos_section {
     display: flex;
     flex-direction: column;
-    background-color: var(--cor1);
     align-items: center;
-    padding: 0px 20px;
+    padding: 80px;
+    background-color: var(--cor2);
     color: var(--cor0);
     text-align: center;
-    height: 100vh;
-    width: 100vw;
-
+    transition: background-color 2.3s;  
 }
-
+.projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
 .projetos_section_titulo {
-    font-size: 2em;
-    margin-top: 50px;
+    font-size: 1.9em;
+    margin-bottom: 40px;
 }
-
-.carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 700px;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.scroll-btn {
-    background-color: #000;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 5px;
-}
-
-.left-btn {
-    left: -5px;
-}
-
-.right-btn {
-    right: -5px;
-}
-
-.carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    perspective: 7000px;
-    height: 100%;
-    /* Ocupa toda a altura */
-    width: 100%;
-}
-
 .projeto {
-    width: 220px;
-    height: 240px;
-    border-bottom: 1px solid var(--cor4);
-    box-shadow: 4px 4px 5px var(--cor4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--cor1);
+    border-radius: 10px ;
+    box-shadow: 4px 4px 5px var(--cor3);
+    padding: 20px;
     text-align: center;
-    border-radius: 10px;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    position: absolute;
-    opacity: 0.5;
-    
+    height: 290px;
+    width: 300px;
+    transition: background-color 2.3s, border-radius 1.3s, width 0.2s;
 }
-
-.projeto.active_project {
-    box-shadow: 0 0 10px #3c0f9587;
+.projeto:hover{
+    border-radius: 20px ;
+    cursor: pointer;
+    width: 310px;
+    box-shadow: 0px 0px 5px var(--light-Cor4);
 }
-
+.projeto a {
+    color: var(--cor0);
+    text-decoration: none;
+}
 .projeto img {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px 8px 0px 0px;
-    
+    border-radius: 8px;
+    padding: 10px 0;
 }
-
-.projeto h3 {
-    color: var(--cor0);
-    margin-top: 10px;
-    font-size: 1.2em;
+.projeto_sub_titulo {
+    font-size: 1.5em;
 }
-
 
 /*Estilos rodapé*/
 .rodape {
+    background-color: var(--cor1);
     text-align: center;
     padding: 20px;
 }
-
 .rodape_sociais {
     margin-bottom: 20px;
 }
-
 .rodape_sociais a {
     display: inline-block;
     margin: 0 10px;
-    
+    text-decoration: none;  
 }
-
-
-
-.rodape_sociais img {
+.rodape_sociais img{
     width: 50px;
-    background-color: var(--cor0);
     border-radius: 100%;
-    transition: padding 1.3s;
+    transition: padding 1.5s;
 }
-
 .rodape_sociais img:hover {
+    background-color: var(--cor0);
     border: 2px solid var(--cor0);
     padding: 3px;
-
+    
 }
-
 .rodape_direitos {
     font-size: 14px;
 }
-

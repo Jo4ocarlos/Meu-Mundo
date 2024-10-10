@@ -6,16 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Mundo</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/ligthMode.css">
     <link rel="stylesheet" href="css/mediaQuery.css">
     <link rel="shortcut icon" href="imagens/meu-mundo.png">
     <script src="script/script.js" defer></script>
-    <script src="script/animacaoLetras.js" defer></script>
-    <script src="script/carousel.js" defer></script>
-    <script src="script/menuHamburguer.js" defer></script>
 </head>
 
 <body>
@@ -54,7 +50,7 @@
         </div>
 
     </header>
-    <main>
+    <main >
         <section class="apresentacao" id="home">
             <div class="apresentacao_conteudo">
                 <h1 class="apresentacao_titulo">
@@ -64,63 +60,56 @@
                     Eu sou João Carlos, desenvolvedor <span class="animacao_texto_dev"> Front-end</span>
                 </p>
                 <div class="apresentacao_links">
-                    <a class="apresentacao_button"
-                        href="https://www.linkedin.com/in/jo%C3%A3o-carlos-de-almeida-silva-724579171/"
-                        target="_blank">LinkedIn</a>
+                    <a class="apresentacao_button" href="https://www.linkedin.com/in/jo%C3%A3o-carlos-de-almeida-silva-724579171/" target="_blank">LinkedIn</a>
                     <a class="apresentacao_button" href="https://github.com/Jo4ocarlos" target="_blank">GitHub</a>
                 </div>
             </div>
         </section>
 
         <section class="sobre-mim" id="sobre">
-
+            
             <div class="sobre-mim_conteudo">
                 <h2 class="sobre-mim_titulo">Sobre mim</h2>
                 <p class="sobre-mim_texto">
-                    Olá! Sou João Carlos, formado em Gestão da Tecnologia da Informação e apaixonado pelo
-                    desenvolvimento web. Com experiência em WordPress, HTML, CSS e JavaScript, dedico-me a criar sites
-                    funcionais e responsivos. Atualmente, estou me aprofundando em React e banco de dados, sempre
-                    buscando aprender e aplicar novas tecnologias em projetos reais. <br>
-                    Estou em constante aprendizado e sempre em busca de novos desafios. Se quiser acompanhar meu
-                    trabalho e projetos, fique à vontade para me seguir no GitHub e no LinkedIn.
+                    Meu nome é João Carlos e sou um desenvolvedor front-end júnior com sólidos conhecimentos em HTML, CSS, JavaScript e React. Busco uma oportunidade para aplicar e expandir minhas habilidades técnicas, colaborar em projetos desafiadores e contribuir para o crescimento da equipe, enquanto continuo aprendendo e evoluindo profissionalmente.
                 </p>
             </div>
             <img src="imagens/minha_foto.png" alt="Minha Foto">
         </section>
 
-
+        
 
         <section class="habilidades" id="habilidades">
             <h2 class="habilidades_titulo">Habilidades</h2>
-
+            
             <div class="habilidades_conteudo">
+                
+                    <div class="habilidade_card">
+                        <img src="imagens/logo-js.jpg" alt="logo JavaScript">
+                        <h3 class="habilidade_nome">JavaScript</h3>
+                     
+                    </div>
 
-                <div class="habilidade_card">
-                    <img src="imagens/logo-js.jpg" alt="logo JavaScript">
-                    <h3 class="habilidade_nome">JavaScript</h3>
+                    <div class="habilidade_card">
+                        <img src="imagens/logo-html.png" alt="logo html">
+                        <h3 class="habilidade_nome">HTML</h3>
+                      
+                    </div>
 
-                </div>
+                    <div class="habilidade_card">
+                        <img src="imagens/logo-css.png" alt="logo css">
+                        <h3 class="habilidade_nome">CSS</h3>
+                    </div>
 
-                <div class="habilidade_card">
-                    <img src="imagens/logo-html.png" alt="logo html">
-                    <h3 class="habilidade_nome">HTML</h3>
+                    <div class="habilidade_card">
+                        <img src="imagens/logo-react.jpg" alt="Logo React">
+                        <h3 class="habilidade_nome">React</h3>
+                    </div> 
 
-                </div>
-
-                <div class="habilidade_card">
-                    <img src="imagens/logo-css.png" alt="logo css">
-                    <h3 class="habilidade_nome">CSS</h3>
-                </div>
-
-                <div class="habilidade_card">
-                    <img src="imagens/logo-react.jpg" alt="Logo React">
-                    <h3 class="habilidade_nome">React</h3>
-                </div>
-
-                <div class="habilidade_card">
-                    <img src="imagens/mysql-logo.png" alt="logo sql">
-                    <h3 class="habilidade_nome">MySQL</h3>
-                </div>
+                    <div class="habilidade_card">
+                        <img src="imagens/mysql-logo.png" alt="logo sql">
+                        <h3 class="habilidade_nome">MySQL</h3>
+                    </div>     
             </div>
             <p class="comentarios">/*Em constante aprendizado*/</p>
         </section>
@@ -128,52 +117,33 @@
 
         <section class="projetos_section" id="projetos">
             <h2 class="projetos_section_titulo">Meus Projetos</h2>
-
-            <div class="carousel-container">
-                <!-- Botão para navegar à esquerda -->
-                <button class="scroll-btn left-btn" onclick="previousProject()">&#10094;</button>
-
-                <div class="carousel">
-
-                    <div class="projeto">
-                        <a href="https://ghloc.com.br/" target="_blank">
-                            <img src="imagens/site_gh.PNG" alt="imagem do site de uma empresa de evento">
-                            <h3 class="projeto_titulo">GH Locações</h3>
-                        </a>
-                    </div>
-                    <div class="projeto">
-                        <a href="https://jo4ocarlos.github.io/desafios-javascript/clone%20p%C3%A1gina%20iphone/"
-                            target="_blank">
-                            <img src="imagens/clone-page-iphone.PNG" alt="imagem do clone da pagina do iphone">
-                            <h3 class="projeto_titulo">Página Iphone</h3>
-                        </a>
-                    </div>
-                    <div class="projeto">
-                        <a href="https://jo4ocarlos.github.io/desafios-javascript/tela-login-museu/formulario/form.html"
-                            target="_blank">
-                            <img src="imagens/projeto_form.png" alt="imagem do projeto formulário">
-                            <h3 class="projeto_titulo">Formulário C/ API</h3>
-                        </a>
-                    </div>
-                    <div class="projeto">
-                        <a href="https://tabela-fipe-eta.vercel.app/" target="_blank">
-                            <img src="imagens/projeto_tabela_fipe.png" alt="imagem projeto Tabela Fipe">
-                            <h3 class="projeto_sub-titulo">Tabela Fipe</h3>
-                        </a>
-                    </div>
-                    <!-- Botão para navegar à direita -->
-                    <button class="scroll-btn right-btn" onclick="nextProject()">&#10095;</button>
+            <div class="projetos">
+                <div class="projeto">
+                    <a href="https://tabela-fipe-eta.vercel.app/" target="_blank">
+                        <img src="imagens/projeto_tabela_fipe.png" alt="imagem projeto Tabela Fipe">
+                        <h3 class="projeto_sub-titulo">Tabela Fipe</h3>
+                    </a>
+                </div>
+                <div class="projeto">
+                    <a href="https://jo4ocarlos.github.io/desafios-javascript/tela-login-museu/formulario/form.html" target="_blank">
+                        <img src="imagens/projeto_form.png" alt="imagem do projeto formulário">
+                        <h3 class="projeto_titulo">Formulário C/ API</h3>
+                    </a>
+                </div>
+                <div class="projeto">
+                    <a href="https://ghloc.com.br/" target="_blank">
+                        <img src="imagens/site_gh.PNG" alt="imagem do site de uma empresa de evento">
+                        <h3 class="projeto_titulo">GH Locações</h3>
+                    </a>
                 </div>
             </div>
-
             <p class="comentarios">/*clique para abrir o projeto*/</p>
         </section>
     </main>
 
     <footer class="rodape">
         <div class="rodape_sociais">
-            <a href="https://www.linkedin.com/in/jo%C3%A3o-carlos-de-almeida-silva-724579171/" target="_blank"><img
-                    src="imagens/icon-linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-carlos-de-almeida-silva-724579171/" target="_blank"><img src="imagens/icon-linkedin.png" alt="LinkedIn"></a>
             <a href="https://github.com/Jo4ocarlos" target="_blank"><img src="imagens/icon-github.png" alt="GitHub"></a>
         </div>
         <p class="rodape_direitos">&copy; 2024 - João Carlos. Todos os direitos reservados.</p>
