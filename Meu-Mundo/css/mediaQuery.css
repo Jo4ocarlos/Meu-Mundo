@@ -1,4 +1,4 @@
-@media screen and (min-width:950px) {
+@media screen and (min-width:780px) {
     .cabecalho{
         background: none;
     }
@@ -78,12 +78,33 @@
     /*estilos da seção de Habilidades*/
     .habilidades_titulo,
     .projetos_section_titulo {
-        font-size: 3.0em;
+        font-size: 2.0em;
 
     }
     .comentarios{
         width: 100%;
     }
+
+    .projetos_section {
+        padding: 30px;
+    }
+    
+     
+      .projeto {
+          width: 250px;
+          height: 220px;
+    
+      }
+    
+      .carousel {
+          height: 700px;
+          perspective: 1200px;
+      }
+    
+      .scroll-btn {
+          font-size: 3.5rem;
+          padding: 10px;
+      }
     
 
 }
