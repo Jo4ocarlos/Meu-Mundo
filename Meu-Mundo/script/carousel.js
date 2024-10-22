@@ -3,7 +3,7 @@ let currentProject = 0;
 
 function updateCarousel() {
   const angle = 360 / projetos.length;
-  
+
   projetos.forEach((projeto, index) => {
     projeto.classList.remove('active_project');
 
@@ -14,9 +14,11 @@ function updateCarousel() {
       projeto.classList.add('active_project');
       projeto.style.transform = `rotateY(0deg) translateZ(400px)`; // Coloca o ativo na frente
       projeto.style.opacity = 1;
+      projeto.style.pointerEvents = 'auto'; // Permite cliques no projeto ativo
     } else {
       projeto.style.transform = `rotateY(${rotation}deg) translateZ(500px)`;
       projeto.style.opacity = 0.2;
+      projeto.style.pointerEvents = 'none'; // Impede cliques em projetos não ativos
     }
   });
 }
@@ -32,4 +34,4 @@ function nextProject() {
 }
 
 // Inicializa o carrossel
-updateCarousel(); 
+updateCarousel();
