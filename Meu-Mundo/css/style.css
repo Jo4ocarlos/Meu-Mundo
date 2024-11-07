@@ -145,8 +145,7 @@ input[type="checkbox"] {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
-    padding: 10px;
+    padding: 40px 10px;
     background-color: var(--cor1);
     color: var(--cor0);
     
@@ -161,7 +160,7 @@ input[type="checkbox"] {
 .sobre-mim_texto {
     text-align: left;
     line-height: 40px;
-    font-size: 1.3em;
+    font-size: 1em;
     margin-bottom: 20px;
 }
 .sobre-mim img {
