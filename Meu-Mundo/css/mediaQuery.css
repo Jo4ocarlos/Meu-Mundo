@@ -1,3 +1,18 @@
+@media screen and (min-width:1000px) {
+    .sobre-mim_titulo {
+        font-size: 3em;
+    }
+
+    .sobre-mim_texto {
+        font-size: 1.8em;
+    }
+
+    .carousel {
+        height: 700px;
+        perspective: 2200px;
+    }
+
+}
 @media screen and (min-width:880px) {
     .cabecalho{
         background: none;
@@ -63,16 +78,16 @@
     }
 
     .sobre-mim_titulo {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .sobre-mim_texto {
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     .sobre-mim img {
         display: block;
-        max-width: 20%;
+        max-width: 23%;
     }
 
     /*estilos da seção de Habilidades*/
