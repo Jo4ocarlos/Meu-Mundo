@@ -164,7 +164,7 @@ input[type="checkbox"] {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    padding: 10px;
+    padding: 40px;
     background-color: var(--cor1);
     color: var(--cor0);
     
