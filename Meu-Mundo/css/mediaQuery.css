@@ -1,18 +1,4 @@
-@media screen and (min-width:1370px) {
-    .sobre-mim_titulo {
-        font-size: 3em;
-    }
 
-    .sobre-mim_texto {
-        font-size: 1.8em;
-    }
-
-    .carousel {
-        height: 700px;
-        perspective: 2200px;
-    }
-
-}
 @media screen and (min-width:880px) {
     .cabecalho{
         background: none;
@@ -121,5 +107,21 @@
           padding: 10px;
       }
     
+
+}
+
+@media screen and (max-width:1370px) {
+    .sobre-mim_titulo {
+        font-size: 3em;
+    }
+
+    .sobre-mim_texto {
+        font-size: 1.8em;
+    }
+
+    .carousel {
+        height: 700px;
+        perspective: 2200px;
+    }
 
 }
