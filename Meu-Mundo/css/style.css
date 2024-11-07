@@ -163,6 +163,7 @@ input[type="checkbox"] {
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
     padding: 10px;
     background-color: var(--cor1);
     color: var(--cor0);
