@@ -15,7 +15,6 @@
 
 
 }
-
 /*Estilos gerais*/
 * {
     margin: 0px;
@@ -24,11 +23,9 @@
     transition: background-color 2.3s;
     text-decoration: none;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     background-color: var(--cor3);
     font-family: var(--font-padrao);
@@ -37,7 +34,6 @@ body {
     overflow-x: hidden;
 
 }
-
 /* Estilo do Cabeçalho */
 .cabecalho {
     position: fixed;
@@ -50,7 +46,6 @@ body {
     height: 10vh;
 
 }
-
 .cabecalho_nav ul {
     display: flex;
     flex-direction: column;
@@ -69,16 +64,13 @@ body {
     transition: transform 0.5s ease-in-out, background-color 1.2s;
     gap: 0px;
 }
-
 .headerBackground {
     background-color: #000;
     transition: ease-in-out, background-color 1.2s;
 }
-
 .cabecalho_nav ul.active {
     transform: translateX(0);
 }
-
 .cabecalho_nav ul a {
     color: var(--cor0);
     
@@ -87,16 +79,13 @@ body {
     text-align: center;
     transition: border-color 4.2s;
 }
-
 .cabecalho_nav ul a:hover {
     background-color:var(--cor0);
     color: var(--cor4);
 }
-
 input[type="checkbox"] {
     display: none;
 }
-
 .material-symbols-outlined {
     color: var(--cor0);
     font-size: 2.3em;
@@ -105,7 +94,6 @@ input[type="checkbox"] {
     padding: 20px;
 
 }
-
 /*Estilos da seção inical/apresentação*/
 .apresentacao {
     display: flex;
@@ -118,25 +106,21 @@ input[type="checkbox"] {
     background-attachment: fixed;
     transition: background-image 2.3s;
 }
-
 .apresentacao_conteudo {
     display: flex;
     flex-direction: column;
     padding: 10px;
     width: 100%;
 }
-
 .apresentacao_titulo {
     font-size: 2em;
 }
-
 .apresentacao_links {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     gap: 30px;
 }
-
 .apresentacao_button {
     background-color: var(--cor0);
     color: var(--cor3);
@@ -149,13 +133,11 @@ input[type="checkbox"] {
     
     transition: background-color 1.3s, color 0.5s;
 }
-
 .apresentacao_button:hover {
     background-color: var(--cor3);
     color: var(--cor0);
     text-decoration: underline;
 }
-
 /* Estilos da seção sobre mim */
 .sobre-mim {
     display: flex;
@@ -169,30 +151,22 @@ input[type="checkbox"] {
     color: var(--cor0);
     
 }
-
 .sobre-mim_conteudo {
     max-width: 400px;
-
 }
-
 .sobre-mim_titulo {
     font-size: 3em;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;   
 }
-
 .sobre-mim_texto {
     text-align: left;
     line-height: 40px;
     font-size: 1.5em;
     margin-bottom: 20px;
-
 }
-
 .sobre-mim img {
     display: none;
 }
-
 /*estilos da seção de Habilidades*/
 .habilidades {
     display: flex;
@@ -207,21 +181,17 @@ input[type="checkbox"] {
     background-size: cover;
     background-attachment: fixed;
     color: var(--cor0);
-    
 }
-
 .habilidades_titulo {
     font-size: 2.2em;
     margin-bottom: 40px;
 }
-
 .habilidades_conteudo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
 }
-
 .habilidade_card {
     background-color: var(--cor2);
     box-shadow: 4px 4px 5px var(--cor3);
@@ -230,27 +200,22 @@ input[type="checkbox"] {
     text-align: center;
     width: 200px;
 }
-
 .habilidade_card img {
     width: 70px;
     height: 70px;
     border-radius: 100%;
 }
-
 .habilidade_nome {
     font-size: 20px;
     margin-top: 10px;
 }
-
 .comentarios {
     font-size: 1.5em;
     margin-top: 50px;
     font-weight: normal;
     width: 100%;
 }
-
 /*estilos da seção de projetos*/
-
 .projetos_section {
     display: flex;
     flex-direction: column;
@@ -261,14 +226,11 @@ input[type="checkbox"] {
     text-align: center;
     height: 100vh;
     width: 100vw;
-
 }
-
 .projetos_section_titulo {
     font-size: 2em;
     margin-top: 50px;
 }
-
 .carousel-container {
     display: flex;
     align-items: center;
@@ -279,7 +241,6 @@ input[type="checkbox"] {
     overflow: hidden;
     z-index: 1;
 }
-
 .scroll-btn {
     background-color: #000;
     border: none;
@@ -292,15 +253,12 @@ input[type="checkbox"] {
     transform: translateY(-50%);
     padding: 5px;
 }
-
 .left-btn {
     left: -5px;
 }
-
 .right-btn {
     right: -5px;
 }
-
 .carousel {
     display: flex;
     justify-content: center;
@@ -309,7 +267,6 @@ input[type="checkbox"] {
     height: 100%;
     width: 100%;
 }
-
 .projeto {
     width: 220px;
     height: 240px;
@@ -322,11 +279,9 @@ input[type="checkbox"] {
     opacity: 0.5;
     
 }
-
 .projeto.active_project {
     box-shadow: 0 0 10px #3c0f9587;
 }
-
 .projeto img {
     width: 100%;
     height: 150px;
@@ -334,45 +289,35 @@ input[type="checkbox"] {
     border-radius: 8px 8px 0px 0px;
     
 }
-
 .projeto h3 {
     color: var(--cor0);
     margin-top: 10px;
     font-size: 1.2em;
 }
 
-
 /*Estilos rodapé*/
 .rodape {
     text-align: center;
     padding: 20px;
 }
-
 .rodape_sociais {
     margin-bottom: 20px;
 }
-
 .rodape_sociais a {
     display: inline-block;
     margin: 0 10px;
     
 }
-
-
-
 .rodape_sociais img {
     width: 50px;
     background-color: var(--cor0);
     border-radius: 100%;
     transition: padding 1.3s;
 }
-
 .rodape_sociais img:hover {
     border: 2px solid var(--cor0);
     padding: 3px;
-
 }
-
 .rodape_direitos {
     font-size: 14px;
 }

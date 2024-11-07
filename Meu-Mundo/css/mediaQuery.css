@@ -63,16 +63,16 @@
     }
 
     .sobre-mim_titulo {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .sobre-mim_texto {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .sobre-mim img {
         display: block;
-        max-width: 23%;
+        max-width: 20%;
     }
 
     /*estilos da seção de Habilidades*/
