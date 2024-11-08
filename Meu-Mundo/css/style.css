@@ -208,10 +208,9 @@ input[type="checkbox"] {
     font-size: 20px;
     margin-top: 10px;
 }
-.comentarios {
+.habilidades .comentarios {
     font-size: 1.5em;
-    margin-top: 50px;
-    font-weight: normal;
+    margin-top: 10px;
     width: 100%;
 }
 /*estilos da seção de projetos*/
@@ -292,6 +291,11 @@ input[type="checkbox"] {
     color: var(--cor0);
     margin-top: 10px;
     font-size: 1.2em;
+}
+.projetos_section .comentarios {
+    font-size: 1.5em;
+    margin-bottom: 60px;
+    width: 100%;
 }
 
 /*Estilos rodapé*/
